@@ -5,7 +5,7 @@
   "scripts": {
     "compile": "forge build && npx typechain --target ethers-v6 \"out/**/!(*.t|test).sol/!(*.abi).json\" --out-dir typechain-types",
     "deploy:test": "forge script script/EventsFactory.s.sol:Deploy --fork-url linea-testnet --broadcast",
-    "deploy:local": "forge script script/EventsFactory.s.sol:Deploy --fork-url http://localhost:8545 --broadcast",
+    "deploy:local": "forge script script/EventsFactory.s.sol:Deploy --fork-url local --broadcast",
     "blockchain": "anvil"
   },
   "devDependencies": {
